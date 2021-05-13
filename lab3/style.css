@@ -1,0 +1,35 @@
+  * {
+      color: #fff;
+      text-align: right;
+  }
+  
+  body {
+      background: url(white-metal-grid-2.png) center no-repeat;
+      background-size: cover;
+  }
+  
+  h1,
+  h2,
+  h3 {
+      color: red;
+      font-family: 'Roboto', sans-serif;
+  }
+  
+  em {
+      padding: 0.5rem;
+      color: green;
+      border-bottom-width: 1px;
+      border-bottom-style: double;
+      border-bottom-color: red;
+  }
+  
+  strong {
+      font-family: 'Caveat', cursive;
+  }
+  
+  h1,
+  h2,
+  p {
+      margin: 1.5rem;
+      ;
+  }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление вертикального меню</title>
+    <style>
+        .menu {
+            width: 200px;
+            background: #369;
+        }
+        
+        .menu ul {
+            display: flex;
+            flex-direction: column;
+            margin: -10px 0;
+            padding-inline-start: 0;
+            padding: 0.5rem;
+        }
+        
+        .menu li {
+            flex: 1 1 auto;
+            margin: 10px 0;
+            padding: 1rem;
+            background-color: #fff;
+            list-style-type: none;
+            transition: all 1s ease 0.5ms;
+        }
+        
+        .menu li a {
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+        
+        .menu li a:hover {
+            color: black;
+        }
+        
+        .menu li:hover {
+            background-color: #FFFFCC;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a onclick="Myfunc(this)" href="#">Фильмы</a></li>
+            <li><a href="#">Музыка</a></li>
+            <li><a href="#">Софт</a></li>
+            <li><a href="#">Игры</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function Myfunc(item) {
+            alert(`Вы нажмали на ${item.nodeName}`)
+        }
+    </script>
+</body>
+
+</html>

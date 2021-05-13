@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Использование float при построении колонок</title>
+    <style type="text/css">
+        #left {
+            background: #ccf;
+            width: 200px;
+            order: 1;
+        }
+        
+        #right {
+            width: 200px;
+            background: #fcc;
+            order: 3;
+        }
+        
+        #center {
+            width: 600px;
+            background: #cfc;
+            order: 2;
+            flex: 1 1 auto;
+        }
+        
+        .main__block {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main__block">
+        <div id="left">left<br>left<br>left<br>left<br>left</div>
+        <div id="right">right<br>right<br>right<br>right</div>
+        <div id="center">center text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+            text text text text text text text text text</div>
+    </div>
+</body>
+
+</html>

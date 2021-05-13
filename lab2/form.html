@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            display: inline-block;
+            width: 60px;
+            margin: 0.4rem;
+        }
+        
+        .vant {
+            display: flex
+        }
+        
+        .vant span {
+            margin-top: 2rem;
+        }
+        
+        form {
+            margin: 0 auto;
+            display: inline-block;
+            background-color: azure;
+            border: 2px solid #333;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <p>Форма регистрации пользователя</p>
+        <span>Email</span> <input required type="email" name="firstname" placeholder="Введите email"> <br>
+        <span>Пароль</span> <input required type="text" name="firstname" placeholder="Введите Пароль"> <br>
+        <span>Пол</span>
+        <input type="radio" name="type1" value="low">Мужчина
+        <input type="radio" name="type1" value="low">Женщина<br>
+        <span>Год рождения</span> <input type="date"><br>
+        <div class="vant">
+            <div><span>Я знаю</span></div>
+            <div> <input type="checkbox" name="option2" value="a2">Русский
+                <Br>
+                <input type="checkbox" name="option3" value="a3">Испанский
+                <Br>
+                <input type="checkbox" name="option4" value="a4">Немецкий
+                <Br>
+                <input type="checkbox" name="option5" value="a5">Английский
+                <Br>
+                <input type="checkbox" name="option5" value="a5">Китайский
+            </div>
+        </div>
+        <span>Обо мне</span><textarea cols="20" rows="5"></textarea>
+        <p><input type="submit" value="Готово">
+            <input type="reset" value="Очистить"></p>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <style>
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        #inner {
+            display: flex;
+        }
+        
+        #left {
+            flex: 1 1 20%;
+            order: 1;
+            background-color: #E0EDCB;
+        }
+        
+        #right {
+            order: 3;
+            flex: 1 1 20%;
+            background-color: #E1E3F4;
+        }
+        
+        #center {
+            flex: 1 1 1200px;
+            order: 2;
+        }
+        
+        #container {
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #header {
+            flex: 1 1 auto;
+            background-color: #CCDDEE;
+        }
+        
+        #outer {
+            align-items: center;
+            flex: 3 1 auto;
+        }
+        
+        #footer {
+            background-color: #DDCCEE;
+            flex: 1 1 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header"></div>
+        <div id="outer">
+            <div id="inner">
+                <div id="left">
+                    <ul>
+                        <li><a href="#">Камень</a></li>
+                        <li><a href="#">Ножницы</a></li>
+                        <li><a href="#">Бумага</a></li>
+                    </ul>
+                </div>
+                <div id="right">right</div>
+                <div id="center">center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center
+                    center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center
+                    center center center center center center center center center center center center center center center</div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>
